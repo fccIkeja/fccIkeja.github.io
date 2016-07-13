@@ -1,0 +1,91 @@
+/* HTML Element Styles */
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/* IDs */
+
+#landing {
+  background: url("../img/campers2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  color: green;
+}
+
+#join-bg {
+  background: url("../img/campers1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+}
+
+#contact-form {
+  background-color: white;
+}
+
+
+/* Classes */
+
+
+/* Navbar */
+
+.nav-white {
+  color: green;
+}
+
+.navbar-default {
+  background: transparent;
+}
+
+.navbar a {
+  color: green !important;
+  /* Really shouldn't need important */
+}
+
+.jumbotron {
+  background: transparent;
+  margin-top: 10%;
+  padding-bottom: 250px;
+}
+
+.container {
+  padding: 80px 120px;
+}
+
+
+/* Button */
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid red;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  transition: .2s;
+}
+
+
+/* On hover, the color of .btn will transition to white with black text */
+
+.btn:hover,
+.btn:focus {
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+}
+
+.nav-items > li > a > em {
+  font-style: normal;
+  padding-bottom: 6px;
+}
+
+.nav-items > li > a > em:hover {
+  border-bottom: 1.5px solid #e7e7e7;
+}
+
+
