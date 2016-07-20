@@ -21,7 +21,23 @@ html, body{
   padding: 0px;
   color: #eee;
 }
-
+/*Add button to the landing section*/
+#landing .btn{
+    padding: 18px 50px;
+    border-radius: 29px;
+    background-color: darkgreen;
+    color: #eee;
+    font-size: 17px;
+    margin-top: 12px
+}
+#landing .btn:hover,
+#landing .btn:focus{
+    background-color: lightgreen;
+    color: #fff;
+}
+#landing h3{
+    margin-bottom: 31px;
+}
 /*
 This css is now redundant
 
@@ -42,7 +58,7 @@ This css is now redundant
 /******** Classes ************/
 
 
-/******** Navbar ************/
+/******** Navbar classes ************/
 
 
 .navbar-default {
@@ -52,43 +68,6 @@ This css is now redundant
 .navbar a {
   color: #eee !important;
   /* Really shouldn't need important */
-}
-
-.jumbotron {
-  background: transparent;
-  margin-top: 10%;
-    position: relative;
-    width: 100%;
-    padding: 100px 15px;
-}
-
-/*
-redundant
-
-.container {
-  padding: 80px 120px;
-}
-*/
-
-/* Button */
-
-.btn {
-  padding: 10px 20px;
-  border: 1px solid red;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  transition: .2s;
-}
-
-
-/* On hover, the color of .btn will transition to white with black text */
-
-.btn:hover,
-.btn:focus {
-  border: 1px solid red;
-  background-color: red;
-  color: white;
 }
 
 .nav-items > li > a > em {
@@ -101,6 +80,47 @@ redundant
 .nav-items > li > a > em:hover {
   border-bottom: 1.5px solid #e7e7e7;
 }
+
+/* other classes*/
+.jumbotron {
+  background: transparent;
+  margin-top: 10%;
+    position: relative;
+    width: 100%;
+    padding: 100px 15px;
+}
+
+
+/*
+redundant
+
+.container {
+  padding: 80px 120px;
+}
+*/
+
+/* Button */
+
+#send-btn {
+  padding: 10px 20px;
+  border: 1px solid red;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  transition: .2s;
+}
+
+
+/* On hover, the color of #send-btn will transition to white with black text */
+
+#send-btn:hover,
+#send-btn:focus {
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+}
+
+
 
 
 /* Section */
