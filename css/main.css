@@ -1,7 +1,9 @@
 /* HTML Element Styles */
 
-body {
+html, body{
   font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    height: 100%;
 }
 
 
