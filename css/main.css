@@ -50,20 +50,25 @@ This css is now redundant
 }
 
 .navbar a {
-  color: green !important;
+  color: #eee !important;
   /* Really shouldn't need important */
 }
 
 .jumbotron {
   background: transparent;
   margin-top: 10%;
-  padding-bottom: 250px;
+    position: relative;
+    width: 100%;
+    padding: 100px 15px;
 }
+
+/*
+redundant
 
 .container {
   padding: 80px 120px;
 }
-
+*/
 
 /* Button */
 
@@ -88,7 +93,9 @@ This css is now redundant
 
 .nav-items > li > a > em {
   font-style: normal;
+    font-size: 18px;
   padding-bottom: 6px;
+    text-transform: uppercase;
 }
 
 .nav-items > li > a > em:hover {
@@ -96,3 +103,7 @@ This css is now redundant
 }
 
 
+/* Section */
+section {
+    padding: 100px 0;
+}
