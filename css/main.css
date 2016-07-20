@@ -10,9 +10,13 @@ html, body{
 /* IDs */
 
 #landing {
-  background: url("../img/campers2.jpg");
+  background: url("../img/fcc2.png");
   background-attachment: fixed;
   background-size: cover;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
   margin: 0px;
   padding: 0px;
   color: green;
