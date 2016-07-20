@@ -19,8 +19,11 @@ html, body{
     -o-background-size: cover;
   margin: 0px;
   padding: 0px;
-  color: green;
+  color: #eee;
 }
+
+/*
+This css is now redundant
 
 #join-bg {
   background: url("../img/campers1.jpg");
@@ -29,20 +32,18 @@ html, body{
   margin: 0px;
   padding: 0px;
 }
+*/
 
 #contact-form {
   background-color: white;
 }
 
 
-/* Classes */
+/******** Classes ************/
 
 
-/* Navbar */
+/******** Navbar ************/
 
-.nav-white {
-  color: green;
-}
 
 .navbar-default {
   background: transparent;
