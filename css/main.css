@@ -34,11 +34,22 @@ html, body{
 }
 #landing .btn:hover,
 #landing .btn:focus{
-    background-color: lightgreen;
+    background-color: #0f1;
     color: #fff;
 }
 #landing h3{
     margin-bottom: 31px;
+}
+#about{
+    background-color: darkgreen;
+    color: #fff;
+}
+#about h4{
+    color: rgba(255,255,255,.5);
+    letter-spacing: 1px;
+}
+#about p em{
+    color: #777;
 }
 /*
 This css is now redundant
