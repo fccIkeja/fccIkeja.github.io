@@ -10,16 +10,18 @@ html, body{
 /* IDs */
 
 #landing {
-  background: url("../img/fcc2.png");
-  background-attachment: fixed;
-  background-size: cover;
+  position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #eee;
+    background-image: url(../img/fcc2.png);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
+    background-size: cover;
     -o-background-size: cover;
-  margin: 0px;
-  padding: 0px;
-  color: #eee;
+    
 }
 /*Add button to the landing section*/
 #landing .btn{
@@ -63,8 +65,10 @@ This css is now redundant
 
 .navbar-default {
   background: transparent;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
 }
-
 .navbar a {
   color: #eee !important;
   /* Really shouldn't need important */
@@ -80,7 +84,11 @@ This css is now redundant
 .nav-items > li > a > em:hover {
   border-bottom: 1.5px solid #e7e7e7;
 }
-
+.navbar-brand{
+    color: 18px;
+    font-size: 24px;
+    
+}
 /* other classes*/
 .jumbotron {
   background: transparent;
@@ -88,6 +96,7 @@ This css is now redundant
     position: relative;
     width: 100%;
     padding: 100px 15px;
+    
 }
 
 
