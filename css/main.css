@@ -41,16 +41,23 @@ html, body{
     margin-bottom: 31px;
 }
 #about{
+    color: rgba(255,255,255,.8);
+    letter-spacing: 1px;
+    padding: 100px 0;
     background-color: darkgreen;
-    color: #fff;
+    width: 100%;
 }
 #about h4{
     color: rgba(255,255,255,.5);
+}
+#count{
+    color: rgba(255,255,255,.8);
     letter-spacing: 1px;
+    padding: 20px 0;
+    background-color: #888;
+    width: 100%;
 }
-#about p em{
-    color: #777;
-}
+
 /*
 This css is now redundant
 
@@ -79,6 +86,7 @@ This css is now redundant
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
     transition: all .4s;
+    width: 100%;
 }
 .navbar a {
   color: #eee !important;
@@ -107,8 +115,8 @@ This css is now redundant
     position: relative;
     width: 100%;
     padding: 100px 15px;
-    
 }
+
 
 
 /*
@@ -143,7 +151,10 @@ redundant
 
 
 
-/* Section */
-section {
-    padding: 100px 0;
+/* others */
+hr{
+    border-color: rgba(255,255,255,.5);;
+    max-width: 70%;
+    border-width: 2px;
 }
+
