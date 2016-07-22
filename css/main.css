@@ -32,14 +32,17 @@ html, body{
     font-size: 17px;
     margin-top: 12px
 }
+/*Add hover to button in the landing section*/
 #landing .btn:hover,
 #landing .btn:focus{
-    background-color: #0f1;
-    color: #fff;
+    background-color: #3f9f10;
+    color: #eee;
 }
+/*Add margin to h3 buttom in landing section*/
 #landing h3{
     margin-bottom: 31px;
 }
+/*Add about section*/
 #about{
     color: rgba(255,255,255,.8);
     letter-spacing: 1px;
@@ -47,9 +50,15 @@ html, body{
     background-color: darkgreen;
     width: 100%;
 }
+/*Set h4 color in the about section*/
 #about h4{
     color: rgba(255,255,255,.5);
 }
+/*Add border to the images in the about section*/
+#about img{
+    border: 3px solid #777;
+}
+/*Add count section*/
 #count{
     color: rgba(255,255,255,.8);
     letter-spacing: 1px;
@@ -58,29 +67,12 @@ html, body{
     width: 100%;
 }
 
-/*
-This css is now redundant
-
-#join-bg {
-  background: url("../img/campers1.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  margin: 0px;
-  padding: 0px;
-}
-*/
-
-#contact-form {
-  background-color: white;
-}
-
-
 /******** Classes ************/
 
 
 /******** Navbar classes ************/
 
-
+/*Set navbar to transparent and responsive to all device port*/
 .navbar-default {
   background: transparent;
     -webkit-transition: all .4s;
@@ -92,11 +84,10 @@ This css is now redundant
   color: #eee !important;
   /* Really shouldn't need important */
 }
-
 .nav-items > li > a > em {
-  font-style: normal;
+    font-style: normal;
     font-size: 18px;
-  padding-bottom: 6px;
+    padding-bottom: 6px;
     text-transform: uppercase;
 }
 
@@ -108,7 +99,7 @@ This css is now redundant
     font-size: 24px;
     
 }
-/* other classes*/
+/*Set jumbotron container transparent*/
 .jumbotron {
   background: transparent;
   margin-top: 10%;
@@ -117,40 +108,6 @@ This css is now redundant
     padding: 100px 15px;
 }
 
-
-
-/*
-redundant
-
-.container {
-  padding: 80px 120px;
-}
-*/
-
-/* Button */
-
-#send-btn {
-  padding: 10px 20px;
-  border: 1px solid red;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  transition: .2s;
-}
-
-
-/* On hover, the color of #send-btn will transition to white with black text */
-
-#send-btn:hover,
-#send-btn:focus {
-  border: 1px solid red;
-  background-color: red;
-  color: white;
-}
-
-
-
-
 /* others */
 hr{
     border-color: rgba(255,255,255,.5);;
@@ -158,3 +115,22 @@ hr{
     border-width: 2px;
 }
 
+
+
+/**MEDIA QUEIES**/
+
+/*when mobile view, resize navbar-brand be parallel with the nav button*/
+@media only screen and (max-width: 357px) {
+    .navbar-brand {
+        font-size: 19px;
+    }
+}
+/*resize the font size in count section when in mobile view*/
+@media only screen and (max-width: 400px) {
+    #cout h2{
+        font-size: 2px;
+    }
+    #count p{
+        font-size: 10px;
+    }
+}
