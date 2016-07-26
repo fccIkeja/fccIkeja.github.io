@@ -10,7 +10,6 @@ html, body{
 /* IDs */
 
 #landing {
-  position: relative;
     width: 100%;
     min-height: auto;
     text-align: center;
@@ -49,6 +48,7 @@ html, body{
     padding: 100px 0;
     background-color: darkgreen;
     width: 100%;
+    bottom: 0;
 }
 /*Set h4 color in the about section*/
 #about h4{
@@ -62,8 +62,15 @@ html, body{
 #count{
     color: rgba(255,255,255,.8);
     letter-spacing: 1px;
-    padding: 20px 0;
+    padding: 100px 0;
     background-color: #888;
+    width: 100%;
+}
+#members{
+    color: #777
+    letter-spacing: 1px;
+    padding: 100px 0;
+    background-color: #eee;
     width: 100%;
 }
 
@@ -102,10 +109,8 @@ html, body{
 /*Set jumbotron container transparent*/
 .jumbotron {
   background: transparent;
-  margin-top: 10%;
-    position: relative;
     width: 100%;
-    padding: 100px 15px;
+    padding: 100px 0;
 }
 
 /* others */
@@ -132,5 +137,10 @@ hr{
     }
     #count p{
         font-size: 10px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .navbar-collapse{
+        background-color: darkgreen;
     }
 }

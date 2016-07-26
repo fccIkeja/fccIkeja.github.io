@@ -39,11 +39,16 @@ $(document).ready(function(){
     // check if scroll event happened
     $(window).scroll(function() {
         // check if user scrolled more than 550 from top of the browser window
-        if ($(document).scrollTop() > 550) {
+        if ($(document).scrollTop() > 440) {
             // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
             $(".navbar-fixed-top").css("background-color", "black");
         } else {
             $(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
         }
+    });
+    
+    // collase the menu bar when navbar is clicked
+    $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-toggle:visible').click();
     });
 });
