@@ -51,4 +51,20 @@ $(document).ready(function(){
     $('.navbar-collapse ul li a').click(function() {
         $('.navbar-toggle:visible').click();
     });
+    //add users to the members section
+    //users images array
+    var usersImage= ["https://at-cdn-s01.audiotool.com/2013/05/11/users/guess_audiotool/avatar256x256-709d163bfa4a4ebdb25160d094551c33.jpg", "https://at-cdn-s01.audiotool.com/2013/05/11/users/guess_audiotool/avatar256x256-709d163bfa4a4ebdb25160d094551c33.jpg","https://at-cdn-s01.audiotool.com/2013/05/11/users/guess_audiotool/avatar256x256-709d163bfa4a4ebdb25160d094551c33.jpg","https://at-cdn-s01.audiotool.com/2013/05/11/users/guess_audiotool/avatar256x256-709d163bfa4a4ebdb25160d094551c33.jpg"];
+   
+    //users names
+    var usersName = ["JOHN ARENU","JOHN ARENU","JOHN ARENU","JOHN ARENU"]; 
+    //users skills
+    var usersSkills = [["HTML"," CSS"," PHP"],["HTML"," CSS"," PHP"],["HTML"," CSS"," PHP"],["HTML"," CSS"," PHP"]];
+    
+    //users profile links
+     var usersProfiles = ["#","#","#","#"];
+    //adding the individual users boxes to the members section
+    for(var i = 0;i<usersImage.length;i++){
+        var membersDiv = '<div class = "box text-center users" id="users"><img class = "img-responsive" id="userimage" src = "'+usersImage[i]+'"/><h3>'+usersName[i]+'</h3><ul id = "skills"><li id = "skillItems">'+usersSkills[i]+'</li></ul><a id= "userProfile" href = "'+usersProfiles[i]+'" target="blank"><h4>VIEW PROFILE</h4></a></div>';
+        $("#allmembers").append(membersDiv);
+    }
 });
