@@ -1,91 +1,203 @@
 /* HTML Element Styles */
 
-body {
+html, body{
   font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    height: 100%;
 }
 
 
 /* IDs */
 
 #landing {
-  background: url("../img/campers2.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  margin: 0px;
-  padding: 0px;
-  color: green;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #eee;
+    background-image: url(../img/fcc2.png);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    
+}
+/*Add button to the landing section*/
+#landing .btn{
+    padding: 18px 50px;
+    border-radius: 29px;
+    background-color: darkgreen;
+    color: #eee;
+    font-size: 17px;
+    margin-top: 12px
+}
+/*Add hover to button in the landing section*/
+#landing .btn:hover,
+#landing .btn:focus{
+    background-color: #3f9f10;
+    color: #eee;
+}
+/*Add margin to h3 buttom in landing section*/
+#landing h3{
+    margin-bottom: 31px;
+}
+/*Add about section*/
+#about{
+    color: rgba(255,255,255,.8);
+    letter-spacing: 1px;
+    padding: 100px 0;
+    background-color: darkgreen;
+    width: 100%;
+    bottom: 0;
+}
+/*Set h4 color in the about section*/
+#about h4{
+    color: rgba(255,255,255,.5);
+}
+/*Add border to the images in the about section*/
+#about img{
+    border: 3px solid #777;
+}
+/*Add count section*/
+#count{
+    color: rgba(255,255,255,.8);
+    letter-spacing: 1px;
+    padding: 100px 0;
+    background-color: #888;
+    width: 100%;
+}
+#members{
+    color: #777
+    letter-spacing: 1px;
+    padding: 100px 0;
+    background-color: #eee;
+    width: 100%;
 }
 
-#join-bg {
-  background: url("../img/campers1.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  margin: 0px;
-  padding: 0px;
+/*set the bcakground color of the members section*/
+.members{
+    background-color:#eee;;
+}
+/*set the properties of the container to wrap the users boxes in horizontal view*/
+#allmembers{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+/* set the background shadow of the users boxes*/
+.users{
+   -moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	-webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+  width:22%;
+  height:300px;
+  padding:20px;
+  background-color:white;
+  margin:15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  
+}
+/* set each box to cover the full screen on smaller devices*/
+@media screen and (max-width:904px){
+  .users{
+    width:90%;
+    margin:10px;
+    height:350px;
+  }
 }
 
-#contact-form {
-  background-color: white;
+#userimage{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+#skills{
+    list-style: none;
+}
+#skills li{
+    margin-right:10px;
+}
+.users a{
+    text-decoration: none;
+}
+.users a h4{
+    background-color: green;
+    padding:15px;
+    border-radius:25px;
+    color: white;
 }
 
 
-/* Classes */
+/******** Classes ************/
 
 
-/* Navbar */
+/******** Navbar classes ************/
 
-.nav-white {
-  color: green;
-}
-
+/*Set navbar to transparent and responsive to all device port*/
 .navbar-default {
   background: transparent;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+    width: 100%;
 }
-
 .navbar a {
-  color: green !important;
+  color: #eee !important;
   /* Really shouldn't need important */
 }
-
-.jumbotron {
-  background: transparent;
-  margin-top: 10%;
-  padding-bottom: 250px;
-}
-
-.container {
-  padding: 80px 120px;
-}
-
-
-/* Button */
-
-.btn {
-  padding: 10px 20px;
-  border: 1px solid red;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  transition: .2s;
-}
-
-
-/* On hover, the color of .btn will transition to white with black text */
-
-.btn:hover,
-.btn:focus {
-  border: 1px solid red;
-  background-color: red;
-  color: white;
-}
-
 .nav-items > li > a > em {
-  font-style: normal;
-  padding-bottom: 6px;
+    font-style: normal;
+    font-size: 18px;
+    padding-bottom: 6px;
+    text-transform: uppercase;
 }
 
 .nav-items > li > a > em:hover {
   border-bottom: 1.5px solid #e7e7e7;
 }
+.navbar-brand{
+    color: 18px;
+    font-size: 24px;
+    
+}
+/*Set jumbotron container transparent*/
+.jumbotron {
+  background: transparent;
+    width: 100%;
+    padding: 100px 0;
+}
+
+/* others */
+hr{
+    border-color: rgba(255,255,255,.5);;
+    max-width: 70%;
+    border-width: 2px;
+}
 
 
+
+/**MEDIA QUEIES**/
+
+/*when mobile view, resize navbar-brand be parallel with the nav button*/
+@media only screen and (max-width: 357px) {
+    .navbar-brand {
+        font-size: 19px;
+    }
+}
+/*resize the font size in count section when in mobile view*/
+@media only screen and (max-width: 400px) {
+    #cout h2{
+        font-size: 2px;
+    }
+    #count p{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .navbar-collapse{
+        background-color: darkgreen;
+    }
+}
