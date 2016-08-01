@@ -74,6 +74,63 @@ html, body{
     width: 100%;
 }
 
+/*set the bcakground color of the members section*/
+.members{
+    background-color:#eee;;
+}
+/*set the properties of the container to wrap the users boxes in horizontal view*/
+#allmembers{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+/* set the background shadow of the users boxes*/
+.users{
+   -moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	-webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+  width:22%;
+  height:300px;
+  padding:20px;
+  background-color:white;
+  margin:15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  
+}
+/* set each box to cover the full screen on smaller devices*/
+@media screen and (max-width:904px){
+  .users{
+    width:90%;
+    margin:10px;
+    height:350px;
+  }
+}
+
+#userimage{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+#skills{
+    list-style: none;
+}
+#skills li{
+    margin-right:10px;
+}
+.users a{
+    text-decoration: none;
+}
+.users a h4{
+    background-color: green;
+    padding:15px;
+    border-radius:25px;
+    color: white;
+}
+
+
 /******** Classes ************/
 
 
