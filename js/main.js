@@ -53,18 +53,34 @@ $(document).ready(function(){
     });
     //add users to the members section
     //users images array
-    var usersImage= ["https://at-cdn-s01.audiotool.com/2013/05/11/users/guess_audiotool/avatar256x256-709d163bfa4a4ebdb25160d094551c33.jpg", "https://at-cdn-s01.audiotool.com/2013/05/11/users/guess_audiotool/avatar256x256-709d163bfa4a4ebdb25160d094551c33.jpg","https://at-cdn-s01.audiotool.com/2013/05/11/users/guess_audiotool/avatar256x256-709d163bfa4a4ebdb25160d094551c33.jpg","https://at-cdn-s01.audiotool.com/2013/05/11/users/guess_audiotool/avatar256x256-709d163bfa4a4ebdb25160d094551c33.jpg"];
+    var usersImage= ["https://at-cdn-s01.audiotool.com/2013/05/11/users/guess_audiotool/avatar256x256-709d163bfa4a4ebdb25160d094551c33.jpg", "https://at-cdn-s01.audiotool.com/2013/05/11/users/guess_audiotool/avatar256x256-709d163bfa4a4ebdb25160d094551c33.jpg","https://at-cdn-s01.audiotool.com/2013/05/11/users/guess_audiotool/avatar256x256-709d163bfa4a4ebdb25160d094551c33.jpg","https://at-cdn-s01.audiotool.com/2013/05/11/users/guess_audiotool/avatar256x256-709d163bfa4a4ebdb25160d094551c33.jpg", "https://at-cdn-s01.audiotool.com/2013/05/11/users/guess_audiotool/avatar256x256-709d163bfa4a4ebdb25160d094551c33.jpg", "https://at-cdn-s01.audiotool.com/2013/05/11/users/guess_audiotool/avatar256x256-709d163bfa4a4ebdb25160d094551c33.jpg","https://at-cdn-s01.audiotool.com/2013/05/11/users/guess_audiotool/avatar256x256-709d163bfa4a4ebdb25160d094551c33.jpg","https://at-cdn-s01.audiotool.com/2013/05/11/users/guess_audiotool/avatar256x256-709d163bfa4a4ebdb25160d094551c33.jpg"];
    
     //users names
-    var usersName = ["JOHN ARENU","JOHN ARENU","JOHN ARENU","JOHN ARENU"]; 
+    var usersName = ["JOHN ARENU","JOHN ARENU","JOHN ARENU","JOHN ARENU","JOHN ARENU","JOHN ARENU","JOHN ARENU","JOHN ARENU"]; 
     //users skills
-    var usersSkills = [["HTML"," CSS"," PHP"],["HTML"," CSS"," PHP"],["HTML"," CSS"," PHP"],["HTML"," CSS"," PHP"]];
+    var usersSkills = [["HTML"," CSS"," PHP"],["HTML"," CSS"," PHP"],["HTML"," CSS"," PHP"],["HTML"," CSS"," PHP"],["HTML"," CSS"," PHP"],["HTML"," CSS"," PHP"],["HTML"," CSS"," PHP"],["HTML"," CSS"," PHP"]];
     
     //users profile links
-     var usersProfiles = ["#","#","#","#"];
-    //adding the individual users boxes to the members section
-    for(var i = 0;i<usersImage.length;i++){
+     var usersProfiles = ["#","#","#","#","#","#","#","#"];
+    //adding the individual users boxes to the members section to only display first four members
+    for(var i = 0;i<=3;i++){
         var membersDiv = '<div class = "box text-center users" id="users"><img class = "img-responsive" id="userimage" src = "'+usersImage[i]+'"/><h3>'+usersName[i]+'</h3><ul id = "skills"><li id = "skillItems">'+usersSkills[i]+'</li></ul><a id= "userProfile" href = "'+usersProfiles[i]+'" target="blank"><h4>VIEW PROFILE</h4></a></div>';
         $("#allmembers").append(membersDiv);
     }
+    //adding event on the members button to display a number of members on each click
+    var a=4;
+    var b =4;
+    $("#membersButton").click(function(){
+        for(var i = a;i<a+b;i++){
+            if(i==usersImage.length){
+                 $("#membersButton").addClass("hidden");
+                 break;
+            }
+     var membersDiv2 = '<div class = "box text-center users" id="users"><img class = "img-responsive" id="userimage" src = "'+usersImage[i]+'"/><h3>'+usersName[i]+'</h3><ul id = "skills"><li id = "skillItems">'+usersSkills[i]+'</li></ul><a id= "userProfile" href = "'+usersProfiles[i]+'" target="blank"><h4>VIEW PROFILE</h4></a></div>';
+$("#allmembers1").append(membersDiv2);
+             
+     }
+        a=a+b;
+    });
+     
 });

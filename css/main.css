@@ -66,20 +66,26 @@ html, body{
     background-color: #888;
     width: 100%;
 }
+
 #members{
-    color: #777
+    color: white;
     letter-spacing: 1px;
     padding: 100px 0;
-    background-color: #eee;
+    background-color: #7F766E;
     width: 100%;
 }
-
 /*set the bcakground color of the members section*/
 .members{
     background-color:#eee;;
 }
 /*set the properties of the container to wrap the users boxes in horizontal view*/
 #allmembers{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+/*second div to add members on button click*/
+#allmembers1{
     display: flex;
     flex-wrap: wrap;
     
@@ -129,7 +135,9 @@ html, body{
     border-radius:25px;
     color: white;
 }
-
+#membersButton{
+    margin:20px;
+}
 
 /******** Classes ************/
 
