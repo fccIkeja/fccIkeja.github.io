@@ -6,33 +6,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Stylesheets -->
+    <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
   <!-- Scripts -->
   <script src="js/jquery-1.12.0.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+    </script>
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="myPage" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="50">
   <!-- nav section -->
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+    <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#myPage">FreeCodeCampIkeja</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">MENU</button>
+        <a class="navbar-brand" href="#myPage">FreeCodeCamp Ikeja</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right nav-items
-">
-          <li><a href="#about"><em>ABOUT</em></a></li>
-          <li><a href="#events"><em>EVENTS</em></a></li>
-          <li><a href="#members"><em>MEMBERS</em></a></li>
-          <li><a href="#join"><em>JOIN</em></a></li>
+        <ul class="nav navbar-nav navbar-right nav-items">
+          <li><a id='scroll' href="#about"><em>About</em></a></li>
+          <li><a id='scroll' href="#members"><em>Members</em></a></li>
+          <li><a id='scroll' href="#events"><em>Events</em></a></li>
+          <li><a id='scroll' href="#contact"><em>Contact</em></a></li>
         </ul>
       </div>
     </div>
@@ -40,66 +40,119 @@
   <!-- Container (Landing Section) -->
   <section id="landing" class="container-fluid text-center">
     <div class="jumbotron">
-      <h1>FreeCodeCampIkeja</h1>
-      <h3>..for the love of open source</h3>
+      <h1><img src='img/FCClogo.png' class='img-responsive'></h1>
+        <div class='row'>
+            <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <h3>..for the love of open source</h3>
+            </div>
+        </div>
+        <a id='scroll join-btn' href='#join' class='btn'>JOIN US</a>
     </div>
   </section>
   <!-- Container (about Section) -->
-  <section id="about" class="container text-center">
-    <h2>ABOUT</h2>
-    <p><em>Official Lagos Free Code Camp Facebook group.</em></p>
-    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
-  </section>
-  <!-- Container (events Section) -->
-  <section id="events" class="container text-center">
-    <h3>EVENTS</h3>
-    <p><em>Official Lagos Free Code Camp Facebook group.</em></p>
-    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
-  </section>
-  <!-- Container (members Section) -->
-  <section id="members" class="container text-center">
-    <h2>MEMBERS</h2>
-    <p><em>Official Lagos Free Code Camp Facebook group.</em></p>
-    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
-  </section>
-  <!-- Container (join Section) -->
-  <div id="join-bg">
-    <section id="join" class="container">
-      <div class="row">
-        <div id="contact-form" class="col-sm-6 pull-left">
-          <h3 class="text-center">Contact</h3>
-          <p class="text-center"><em>We'd love to hear from you.</em></p>
-          <div class="row">
-            <div class="col-sm-12">
-              <p><span class="glyphicon glyphicon-phone"></span>Phone: </p>
-              <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-            </div>
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-            </div>
-          </div>
-          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-          <br>
-          <div class="row">
-            <div class="col-md-12 form-group">
-              <button class="btn pull-right" type="submit">Send</button>
-            </div>
-          </div>
-        </div>
-      </div>
+  <section id="about">
+      <div class='container'>
+          <div class='row'>
+              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                  <div class='row'>
+                      <div class='col-lg-1 col-md-1 col-sm-0 col-xs-0'></div>
+                      <div class='col-lg-10 col-md-10 col-sm-12 col-xs-12'>
+                        <h2 class='text-center'>ABOUT</h2>
+                        <p class='text-center'><em>Official Ikeja Free Code Camp Facebook group.</em></p>
+                          <h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+                          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h4>
+                      </div><!--end sub-sub-col-->
+                      <div class='col-lg-1 col-md-1 col-sm-0 col-xs-0'></div>
+                  </div><!--end sub-row-->
+                  <hr>
+              </div><!--end sub-col-->
+              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <div class='row'>
+                    <div class='col-lg-3 col-md-3 col-sm-12 col-xs-12'>
+                        <img src='img/campers1.jpg' class='img-responsive img-rounded'>
+                    </div><!--end sub-sub-col-->
+                    <div class='col-lg-9 col-md-9 col-sm-12 col-xs-12'>
+                        <h3 class='text-center'>MONTHLY MEETUPS</h2>
+                        <h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+                          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h4>
+                    </div><!--end sub-sub-col-->
+                </div><!--end sub-row-->
+                <hr>
+              </div><!--end sub-col-->
+              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <div class='row'>
+                    <div class='col-lg-9 col-md-9 col-sm-6 col-xs-12'>
+                        <h3 class='text-center'>CODE CHALLENGES</h2>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+                    </div>
+                    <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                        <img src='img/campers2.jpg' class='img-responsive img-rounded'>
+                    </div><!--end sub-sub-col-->
+                </div><!--end sub-row-->
+                <hr>
+              </div><!--end sub-col-->
+              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <div class='row'>
+                    <div class='col-lg-3 col-md-3 col-sm-12 col-xs-12'>
+                        <img src='img/fcc1.png' class='img-responsive img-rounded'>
+                    </div><!--end sub-sub-col-->
+                    <div class='col-lg-9 col-md-9 col-sm-12 col-xs-12'>
+                        <h3 class='text-center'>PROBLEM SOLVING</h2>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+                    </div><!--end sub-sub-col-->
+                </div><!--end sub-row-->
+                <hr>
+              </div><!--end sub-col-->
+          </div><!--end main row-->
+          
+      </div><!--end about container-->
+    </section><!--end about-->
+    
+    <!--count section-->
+    
+    <section id='members' >
+        <div class='container jumbotron'>
+          <div class="col-md-10 col-md-offset-1">
+
+          
+            <div class='row  text-center'>
+                <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+                    <h1>OVER 400</h1>
+                    <p>MEMBERS</p>
+                </div><!--end count col-->
+                <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+                    <h1>OVER 25</h1>
+                    <p>CERTIFIED FRONT-END DEVELOPERS</p>
+                </div><!--end count col-->
+                <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+                    <h1>OVER 400</h1>
+                    <p>EVERYDAY LEARNERS</p>
+                </div><!--end count col-->
+            </div><!--end count row-->
+          </div><!-- This is the new div i kept -->
+        </div><!--end count container-->
     </section>
-  </div>
+    
+    <!--members section-->
+    <section class="container-fluid members text-center">
+         <h1>MEMBERS</h1><br/><br>
+    <div class="container" id="allmembers">
+        
+    </div>
+    <div class="container" id="allmembers1">
+        
+    </div>
+        <!--button to display all members-->
+        <button type="button" class="btn btn-success" id="membersButton">SHOW MORE</button>
+    </section>
+   
   <!-- Footer -->
   <footer class="text-center">
     <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
       <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
   </footer>
+   
 </body>
 
 </html>
